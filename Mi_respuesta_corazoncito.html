@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡NO!</title>
+  <script>
+    var clickCount = 0;
+
+    function handleClick() {
+      clickCount++;
+
+      if (clickCount >= 15) {
+        document.getElementById('result').innerText = Nop ;
+      }
+    }
+  </script>
+</head>
+<body onclick="handleClick()">
+  <h1>Clic para descubrir!</h1>
+  <p>Mi respuesta a tu pregunta es:</p>
+  <div id="result"></div>
+</body>
+</html>
